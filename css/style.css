@@ -1,0 +1,25 @@
+/*
+Project's name:
+Description:
+Version:
+Author:
+Last date modified:
+Style name:
+
+Using MentariCSS Framework
+Get it from http://www.mentaricss.com
+Licensed under GPL
+
+Written by: Mohd Huzairy from Malaysia
+Website: http://www.mentariworks.com
+*/
+
+/* Import external stylesheet */
+@import url('mentari.css');
+
+/* Common HTML tags */
+body
+{
+	font-family:helvetica,verdana,arial;
+	padding:20px;
+}
