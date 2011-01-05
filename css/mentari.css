@@ -1,14 +1,11 @@
 /*
 Description: Reset, table, and typography
 Style name: mentari.css
-Version: 0.1.1
+Version: 0.2
 
 Using MentariCSS Framework
 Get it from http://www.mentaricss.com
 Licensed under GPL
-
-Written by: Mohd Huzairy from Malaysia
-Website: http://www.mentariworks.com
 
 Table of contents:
 -------------------
@@ -26,43 +23,35 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center, dl, dt, dd, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td
 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	vertical-align: baseline;
-	background: transparent;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
 }
 
 body
 {
-	line-height: 1;
+	line-height:1;
 }
 
 blockquote, q
 {
-	quotes: none;
+	quotes:none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after
 {
-	content: '';
-	content: none;
+	content:'';
+	content:none;
 }
 
 hr
 {
 	display:none;
 }
-
-/* Uncomment this if you want to disable default bullet and numeric styling.
-ol,ul,li
-{
-	list-style:none;
-	margin:0;
-	padding:0;
-} */
 /* End Reset */
 
 /* 2.Table */
@@ -77,14 +66,24 @@ caption									{ top:8px; margin-bottom:18px; text-align: left; font-weight: no
 /* End Table */
 
 /* 3.Typography */
-h1, h2, h3, h4, h5, h6					{ position: relative; }
+h1, h2, h3, h4, h5, h6					{ position:relative; }
 p, blockquote							{ line-height:150%; margin:10px 0 15px 0; }
 cite									{ font-style:normal; display:block; margin:10px 0;}
-code									{ font-family:courier,monospace; background:#fffcdc; border-bottom:1px solid #ccc; font-size:0.9em; letter-spacing:1px; line-height:150%; }
+code									{ font-family:courier,monospace; background:#fffcdc; border-bottom:1px solid #ccc; line-height:150%; }
 acronym, abbr							{ cursor:help; border-bottom:1px dotted #999; }
+sup										{ vertical-align:text-top; }
+sub										{ vertical-align:text-bottom; }
+sup, sub								{ line-height:0; }
 /* End Typography */
 
 /* 4.Positioning */
 .clear                                  { clear:both; }
 .left									{ float:left; }
 .right									{ float:right; }
+.left, .right, .clearfix				{ display:inline-block } /*remove extra white space*/
+.clearfix:after							{ clear:both; content:" "; display:block; height:0; font-size:0; visibility:hidden }
+.center									{ float:none; margin:0 auto;}
+.pabs									{ position:absolute }
+.prel									{ position:relative }
+.pabs, .prel							{ z-index:1 } /* Position ABSolute, Position RELative */
+.imgrep									{ display:block; text-indent:-9999px }

@@ -4,14 +4,10 @@ Description:
 Version:
 Author:
 Last date modified:
-Style name:
 
 Using MentariCSS Framework
 Get it from http://www.mentaricss.com
 Licensed under GPL
-
-Written by: Mohd Huzairy from Malaysia
-Website: http://www.mentariworks.com
 */
 
 /* Import external stylesheet */
@@ -20,11 +16,37 @@ Website: http://www.mentariworks.com
 /* Common HTML tags */
 body
 {
-	font-family:helvetica,verdana,arial;
-	padding:20px;
+	font:90%/150% arial,sans-serif,verdana;
+	background:#fff;
+	color:#444;
 }
 
-#test
+/* Wrapping */
+#wrapper
+{
+	
+}
+
+/* Header section */
+#header
+{
+	
+}
+
+/* Content section */
+#content
+{
+	
+}
+
+/* Sidebar section */
+#sidebar
+{
+	
+}
+
+/* Footer section */
+#footer
 {
 	
 }
